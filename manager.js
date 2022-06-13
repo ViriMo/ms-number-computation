@@ -20,7 +20,7 @@ MM.init(config, (err, serviceInfo) => {
          **/
          const computer = require('./computer');
          try {
-             const result = computer.add(bdy.a, bdy.b);
+             const result = computer.add(Number(bdy.a), Number(bdy.b));
              msg.reply({ result });
          } catch (err) {
              console.error(err);
